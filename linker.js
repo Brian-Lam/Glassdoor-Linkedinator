@@ -16,7 +16,7 @@ var save = function(addName,addRating) {
     //[1]: Month of date when rating was stored
     //[2]: Day of date when rating was stored
     //[3]: Year of date when rating was stored
-    var employer = [(addRating * 10), date.getMonth(), date.getDate(), date.getYear()];
+    var employer = [(addRating * 10), date.getMonth(), date.getDate(), date.getFullYear()];
     localStorage[addName] = employer;
 }
 
